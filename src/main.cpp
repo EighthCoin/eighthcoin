@@ -1993,14 +1993,8 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
     // Record proof hash value
     pindexNew->hashProof = hashProof;
 
-
-
-
-
-
     // ppcoin: compute stake modifier
 
-/*
     uint64_t nStakeModifier = 0;
     bool fGeneratedStakeModifier = false;
 
@@ -2011,11 +2005,7 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
     pindexNew->nStakeModifierChecksum = GetStakeModifierChecksum(pindexNew);
     if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
         return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
-*/
     
-
-
-
     // Add to mapBlockIndex
     map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.insert(make_pair(hash, pindexNew)).first;
     if (pindexNew->IsProofOfStake())
