@@ -12,8 +12,6 @@ EighthCoin Specifications
 
 Coin name: EighthCoin 
 
-Algorithm: Scrypt
-
 Coin Type :  POS / Masternode
 
 Symbol: 8TH
@@ -178,3 +176,4 @@ server=1
 
 addnode=35.197.22.150
 
+addnode=35.192.57.222
