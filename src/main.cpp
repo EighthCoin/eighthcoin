@@ -1372,24 +1372,21 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
 {
 	int nBestHeight = pindexPrev->nHeight + 1;
 	
-	int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+	int64_t nSubsidy = STATIC_REWARD;
 	
-	if (nBestHeight % 8888888 == 0) {
-        	nSubsidy = nSubsidy / 11 * 1111111; //     8888888
-    	} else if (nBestHeight % 888888 == 0) {
-        	nSubsidy = nSubsidy / 11 * 111111; //      888888
-    	} else if (nBestHeight % 88888 == 0) {
+        if (nBestHeight % 88888 == 0) {
         	nSubsidy = nSubsidy / 11 * 11111; //       88888
     	} else if (nBestHeight % 8888 == 0) {
         	nSubsidy = nSubsidy / 11 * 1111; //        8888
     	} else if (nBestHeight % 888 == 0) {
         	nSubsidy = nSubsidy / 11 * 111; //         888
     	} else {
-        	// default nSubsidy is 88
+        	// default nSubsidy STATIC_REWARD is 88
     	}
 	
 	return nSubsidy + nFees;
 }
+
 
 static int64_t nTargetTimespan = 8 * 60;  // 8 mins
 
