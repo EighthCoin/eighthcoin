@@ -159,6 +159,8 @@ sudo apt-get remove qt-at-spi
 
 
 
+Go to RUN -> %appdata% -> Common Files -> EighthCoin8 -> Open Wallet Configuration File. Open the file in Note and paste the following lines. The Config file is located as EighthCoin.conf
+
 
 eighthcoin.conf file:
 
@@ -170,6 +172,8 @@ rpcallowip=127.0.0.1
 
 rpcport=8889
 
+port=8888
+
 listen=1
 
 server=1
@@ -177,3 +181,54 @@ server=1
 addnode=35.197.22.150
 
 addnode=35.192.57.222
+
+
+
+
+
+BASIC MASTERNODE GUIDE FOR WINDOWS
+===========================
+
+Open and Run the wallet for the first time. In the lower left hand corner of the User Interface, you will see “Synchronizing with network” and other sync messages each time you open your Wallet. If there is a problem synchronizing, it may say “No Block Source Available” instead. If this happens, just close and re-open the wallet until it synchronizes
+
+Go to Help -> Debug Console.
+
+
+
+
+In the Console window enter "getaccountaddress MN" and copy the result.
+
+This is your MASTERNODE DEPOSIT ADDRESS, where you will deposit the coins to create a masternode.
+(Donation Address*)
+Pay 800,000 8TH exactly into this address.
+
+
+In the Console Debug window enter "masternode genkey" and copy the result. This is your MASTERNODE PRIVKEY. This is your MASTERNODE PRIVKEY.
+(PrivKey*)
+ 
+In the Console Debug window enter "masternode outputs".
+{
+"a33e0795a9b44d61anbdcd0a1565c9e7c4247a233ca55ae95762f5cbca40ca97" : "0" 
+(TxHash*):(Output Index*)
+}
+
+Masternodes --> My Master Nodes --> Create
+(Alias*) : MN
+(Address*) : Your IP:8888
+(Donation %) : 100
+
+
+Click "start". You will see the response “Masternode started successfully”.
+
+Congratulations, your masternode is now running.
+
+Now click the Masternodes tab that is now visible. All masternodes need to be active for a certain amount of blocks before they are recognized by the network and eligible for rewards.
+
+
+
+
+
+
+
+
+
