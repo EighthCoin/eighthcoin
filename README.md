@@ -1,31 +1,39 @@
-#EighthCoin
+#EighthCoin PoS + Masternode
 EighthCoin is a digital currency designed for low fees and instant transactions for payments all around the world and merchants that accept cryptocurrency as a form of payment.
 
 
 EighthCoin benefits from the open source and transparent nature of Bitcoin, and utilizes a more distributed encryption system known as Staking combined with a reward system for mining. This makes earning rewards more possible from your desktop and resist ASCI machines. EighthCoin is a PoS-based cryptocurrency.
 
 
-
 ##EighthCoin Specifications
 
-Coin name: EighthCoin
+Coin name: EighthCoin 
 
 Algorithm: Scrypt
 
-Type: PoW/PoS
+Coin Type :  POS / Masternode
 
 Symbol: 8TH
 
 Address Prefix: 8
 
-Total supply: 8,888,888,888 coins
+Total supply: 888,888,888 coins
 
-Block Reward: 88 coins normally
+Masternode: 800000 coins
 
 PoS percentage: 88% per year normally
 
+Stake Min Age: 8 min
+
+Stake Max Age: 88 Days
+
+Modifier Interval: 8 min time to elapse before new modifier is computed
 
 ##Discord:
+
+Swap from old 8TH coin: 
+100:1
+
 https://discordapp.com/invite/K3U6r6J
 
 Development process
@@ -149,18 +157,17 @@ sudo apt-get remove qt-at-spi
 
 eighthcoin.conf file:
 
-rpcuser=eighthcoinrpc
+rpcuser=admin
 
-rpcpassword=266UEon46enH4mKFNnGEhvQmdmPh6hrFL2w74YKD1C6v
+rpcpassword=root
 
 rpcallowip=127.0.0.1
 
-rpcport=32049
+rpcport=8889
 
 listen=1
 
 server=1
 
-addnode=35.231.57.253
+addnode=35.197.22.150
 
-addnode=35.185.107.113 
