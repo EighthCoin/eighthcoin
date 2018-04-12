@@ -1,11 +1,14 @@
-#EighthCoin PoS + Masternode
+EighthCoin PoS + Masternode
+===========================
+
 EighthCoin is a digital currency designed for low fees and instant transactions for payments all around the world and merchants that accept cryptocurrency as a form of payment.
 
 
 EighthCoin benefits from the open source and transparent nature of Bitcoin, and utilizes a more distributed encryption system known as Staking combined with a reward system for mining. This makes earning rewards more possible from your desktop and resist ASCI machines. EighthCoin is a PoS-based cryptocurrency.
 
 
-##EighthCoin Specifications
+
+EighthCoin Specifications
 
 Coin name: EighthCoin 
 
@@ -29,10 +32,14 @@ Stake Max Age: 88 Days
 
 Modifier Interval: 8 min time to elapse before new modifier is computed
 
-##Discord:
 
+Plan
 Swap from old 8TH coin: 
 100:1
+
+
+
+Discord:
 
 https://discordapp.com/invite/K3U6r6J
 
