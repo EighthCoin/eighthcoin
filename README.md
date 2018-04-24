@@ -18,28 +18,12 @@ Symbol: 8TH
 
 Address Prefix: 8
 
-Total supply: 888,888,888 coins
-
 Masternode: 800000 coins
-
-PoS percentage: 88% per year normally
 
 Stake Min Age: 8 min
 
 Stake Max Age: 88 Days
 
-Modifier Interval: 8 min time to elapse before new modifier is computed
-
-
-Plan
-Swap from old 8TH coin: 
-100:1
-
-
-
-Discord:
-
-https://discordapp.com/invite/K3U6r6J
 
 Development process
 ===========================
@@ -206,16 +190,19 @@ Pay 800,000 8TH exactly into this address.
 In the Console Debug window enter "masternode genkey" and copy the result. This is your MASTERNODE PRIVKEY. This is your MASTERNODE PRIVKEY.
 (PrivKey*)
  
+ 
 In the Console Debug window enter "masternode outputs".
 {
 "a33e0795a9b44d61anbdcd0a1565c9e7c4247a233ca55ae95762f5cbca40ca97" : "0" 
 (TxHash*):(Output Index*)
 }
 
+
 Masternodes --> My Master Nodes --> Create
 (Alias*) : MN
 (Address*) : Your IP:8888
 (Donation %) : 100
+
 
 
 Click "start". You will see the response “Masternode started successfully”.
